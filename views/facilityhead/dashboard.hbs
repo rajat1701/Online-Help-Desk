@@ -1,0 +1,27 @@
+<div class="rightflush"><a href="/signout"><button class="button-74">Log Out</button></a></div>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Request By</th>
+            <th>Facility</th>
+            <th>Reason</th>
+            <th>Status</th>
+            <th>Action</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+           <tr>
+                <td>{{user_id.name}}</td>
+                <td>{{facilityId.name}}</td>
+                <td>{{desc}}</td>
+                <td>{{status}}</td>
+                <td><form action="/facilityhead/update" method="POST">
+                <input type="hidden" name="requestId" value="{{_id}}" hidden>
+                <button name="approve">✅</button><button name="reject">❌</button></form></td>
+           </tr>
+        {{/each}}
+        <!-- and so on... -->
+    </tbody>
+</table>

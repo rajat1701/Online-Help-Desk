@@ -1,0 +1,25 @@
+<div class="rightflush">
+    <a href="/signout"><button class="button-74">Log Out</button></a><button class="button-74"  role="button" onclick="location.href='../student/createrequest/'">Add a Facility Request</button>
+
+</div>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Facility</th>
+            <th>Reason</th>
+            <th>Status</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+           <tr>
+                <td>{{facilityId.name}}</td>
+                <td>{{desc}}</td>
+                <td>{{status}}</td>
+                
+           </tr>
+        {{/each}}
+        <!-- and so on... -->
+    </tbody>
+</table>

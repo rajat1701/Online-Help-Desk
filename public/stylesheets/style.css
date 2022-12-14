@@ -1,0 +1,139 @@
+body {
+  padding: 50px;
+  padding-bottom: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f8e1c8;
+}
+.rightflush{
+  display:flex;
+  flex-direction: row-reverse;
+  width:100%
+}
+input { 
+  text-transform: none;
+}
+::-webkit-input-placeholder { 
+    text-transform: none;
+}
+:-moz-placeholder { 
+    text-transform: none;
+}
+::-moz-placeholder { 
+    text-transform: none;
+}
+:-ms-input-placeholder { 
+    text-transform: none;
+}
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  width: 70rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #f8e1c8;
+  color: black;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #fbeee0;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #fbeee0;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #422800;
+}
+a {
+  color: #00B7FF;
+}
+.title{
+  text-align: center;
+}
+.logo{
+  width:150px;
+  height: 150px;
+  position:absolute;
+  transform: translateY(-25%)
+}
+
+.desc{
+  
+  width: 100%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+.desc-text{
+  width:700px;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+.header{
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  position: relative;
+}
+.header > p{
+  margin: 0 auto;
+  height: auto;
+  
+}
+.buttons{
+  margin-top: 50px;
+}
+.footer{
+  margin-top: 50px;
+  padding: 0;
+  margin-bottom: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 10px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 12px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  height: 60px;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}

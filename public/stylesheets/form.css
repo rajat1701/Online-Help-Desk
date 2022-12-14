@@ -1,0 +1,117 @@
+.signin:focus {
+    outline: none;
+
+}
+
+.signin {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8e1c8;
+    font-family: 'robot', sans-serif;
+
+}
+.signup:focus {
+    outline: none;
+
+}
+
+.signup {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8e1c8;
+    font-family: 'robot', sans-serif;
+
+}
+.form {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 600px;
+    color: #FFF;
+    font-family: 'robot', sans-serif;
+    backdrop-filter: blur(10px);
+    padding: 50px 40px;
+    background-color: #fbeee0;
+    height: auto;
+    margin: 0 auto;
+}
+
+.heading {
+    /* opacity: 0; */
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 80;   
+    margin-bottom: 20px;
+    color: #fbeee0;
+    background-color: black;
+    margin: 10px auto;
+    display: block;
+    width: 90%;
+    padding: 15px;
+}
+
+input, .submit-btn{
+    /* opacity: 0; */
+    width:90%;
+    border: 2px solid black;
+    height: 25px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    /* border:none; */
+    color: black;
+    padding: 15px;
+    transition: .5s;
+    text-transform: capitalize;
+
+
+}
+
+input::placeholder{
+    color: gray;
+}
+
+input:focus, .submit-btn:hover{
+    background: #fff;
+    color: black;
+}
+
+input:focus::placeholder{
+    color: black;
+
+}
+
+.submit-btn{
+    width: auto;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 20px auto 0;
+
+}
+
+.link{
+    /* opacity: 0; */
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:black;
+    display:block;
+    margin: 30px auto;
+}
+.link:hover{
+    color: #f8e1c8;
+}

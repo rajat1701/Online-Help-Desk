@@ -1,0 +1,16 @@
+<form class="form" method="POST" action="/student/createrequest">
+      <h1 class="heading">Fill the Details of the Facility request</h1>
+      <select name="facilityId" id="facilityId">
+        {{#each data}}
+        <option value="{{_id}}">{{name}}</option>
+        {{/each}}
+      </select>
+      
+      <input
+        type="text"
+        placeholder="Why is the facility needed(brief reason)"
+        name="desc"
+        required
+      />
+      <button class="submit-btn" name="submit">Add Facility Request</button>
+    </form>  
