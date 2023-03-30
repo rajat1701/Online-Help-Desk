@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "env-cmd -f ./config/dev.env node ./bin/www",
     "database": "E:/MongoDB/bin/mongod.exe --dbpath=E:/mongodb-data",
     "dev": "env-cmd -f ./config/dev.env nodemon ./bin/www"
   },
   "dependencies": {
-    "connect-mongo": "^4.6.0",
+    "connect-mongo": "^5.0.0",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
