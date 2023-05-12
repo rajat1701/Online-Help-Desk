@@ -51,3 +51,4 @@ router.post("/addstudent", async (req, res) => {
   res.redirect("/collegehead/dashboard");
 });
 module.exports = router;
+

@@ -51,6 +51,15 @@ router.get("/signout", (req, res) => {
     }
     res.cookie(prop, "", { expires: new Date(0) });
   }
+  if (req.session) {
+    req.session.destroy((err) => {
+      if (err) {
+        res.status(400).send("Unable to log out");
+      } else {
+        res.send("Logout successful");
+      }
+    });
+  }
   res.redirect("/");
 });
 module.exports = router;
